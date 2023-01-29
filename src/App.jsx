@@ -1,7 +1,15 @@
+import { About, Contact, Course, Footer, Home, Navbar } from "./components";
 
 const App = () => {
   return (
-    <div>test</div>
+    <div className="font-Poppins bg-Solitude">
+    <Navbar />
+    <Home />
+    <About />
+    <Course />
+    <Contact />
+    <Footer />
+    </div>
   );
 };
 
