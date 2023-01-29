@@ -1,4 +1,4 @@
-import { About, Contact, Course, Footer, Home, Navbar } from "./components";
+import { About, Contact, Courses, Footer, Home, Navbar, Teacher } from "./components";
 
 const App = () => {
   return (
@@ -6,7 +6,8 @@ const App = () => {
     <Navbar />
     <Home />
     <About />
-    <Course />
+    <Courses />
+    <Teacher />
     <Contact />
     <Footer />
     </div>
