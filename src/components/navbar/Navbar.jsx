@@ -1,22 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { navLinks } from "../../Data";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 import NavLink from "./NavLink";
-import { useState } from "react";
 import MobileNavLink from "./MobileNavLink";
-import { useEffect } from "react";
+import {motion} from "framer-motion"
+
 const Navbar = () => {
-  const [toggel,setToggel] = useState(false)
-  const [active,setActive] =useState(false)
+  const [toggel, setToggel] = useState(false);
+  const [active, setActive] = useState(false);
 
-  useEffect(()=>{
-
-    const scrollActive = ()=>{
-      setActive(window.scrollY>20)
-    }
-    window.addEventListener('scroll',scrollActive)
-    return ()=>window.removeEventListener("scroll",scrollActive)
-  },[active])
+  useEffect(() => {
+    const scrollActive = () => {
+      setActive(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", scrollActive);
+    return () => window.removeEventListener("scroll", scrollActive);
+  }, [active]);
   return (
     <div
       className={`${
@@ -48,7 +47,7 @@ const Navbar = () => {
               Sign Up
             </button>
             {toggel && (
-              <div className="fixed h-full w-96 top-0 left-0 z-20 bg-Teal text-white flex flex-col justify-center items-center shadow-lg gap-8 py-8 ">
+              <motion.div initial={{x:-500 ,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.3}} className="fixed h-full w-96 top-0 left-0 z-20 bg-Teal text-white flex flex-col justify-center items-center shadow-lg gap-8 py-8 ">
                 {navLinks.map((navLink) => {
                   return (
                     <MobileNavLink
@@ -62,7 +61,7 @@ const Navbar = () => {
                   className="absolute right-14 top-12 text-3xl border border-solid cursor-pointer hover:bg-white hover:text-black"
                   onClick={() => setToggel(false)}
                 />
-              </div>
+              </motion.div>
             )}
           </div>
         </div>
