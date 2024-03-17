@@ -4,6 +4,7 @@ import { HiMenuAlt1, HiX } from "react-icons/hi";
 import NavLink from "./NavLink";
 import MobileNavLink from "./MobileNavLink";
 import {motion} from "framer-motion"
+import logo from "../../assets/logo.png"
 
 const Navbar = () => {
   const [toggel, setToggel] = useState(false);
@@ -33,9 +34,13 @@ const Navbar = () => {
               className="text-3xl cursor-pointer sm:hidden"
               onClick={() => setToggel(true)}
             />
-            <div className="text-xl text-Teal uppercase tracking-wide font-bold">
-              Skillex
-            </div>
+            <img
+              src={logo}
+              alt="logo"
+              className={
+                active ? "w-12 h-12 hidden md:flex" : "w-24 h-24 hidden md:flex"
+              }
+            />
           </div>
           <div className="sm:flex items-center hidden">
             {navLinks.map((navLink) => {
@@ -47,7 +52,12 @@ const Navbar = () => {
               Sign Up
             </button>
             {toggel && (
-              <motion.div initial={{x:-500 ,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.3}} className="fixed h-full w-96 top-0 left-0 z-20 bg-Teal text-white flex flex-col justify-center items-center shadow-lg gap-8 py-8 ">
+              <motion.div
+                initial={{ x: -500, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                className="fixed h-full w-96 top-0 left-0 z-20 bg-Teal text-white flex flex-col justify-center items-center shadow-lg gap-8 py-8 "
+              >
                 {navLinks.map((navLink) => {
                   return (
                     <MobileNavLink
