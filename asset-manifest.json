@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/akm-teach/static/css/main.ec09f577.css",
-    "main.js": "/akm-teach/static/js/main.69ed1c89.js",
+    "main.js": "/akm-teach/static/js/main.b1ec0cb0.js",
     "static/media/courses6.jpg": "/akm-teach/static/media/courses6.d5295d74c87f9985ecc7.jpg",
     "static/media/courses3.jpg": "/akm-teach/static/media/courses3.c2435d5f4e345d7cd0ea.jpg",
     "static/media/courses4.jpg": "/akm-teach/static/media/courses4.811b56c6f01ac8e85d86.jpg",
@@ -22,10 +22,10 @@
     "static/media/logo1.png": "/akm-teach/static/media/logo1.9d63898e72813d4b2458.png",
     "index.html": "/akm-teach/index.html",
     "main.ec09f577.css.map": "/akm-teach/static/css/main.ec09f577.css.map",
-    "main.69ed1c89.js.map": "/akm-teach/static/js/main.69ed1c89.js.map"
+    "main.b1ec0cb0.js.map": "/akm-teach/static/js/main.b1ec0cb0.js.map"
   },
   "entrypoints": [
     "static/css/main.ec09f577.css",
-    "static/js/main.69ed1c89.js"
+    "static/js/main.b1ec0cb0.js"
   ]
 }
