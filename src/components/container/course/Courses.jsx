@@ -25,17 +25,19 @@ const Courses = () => {
           Our Top <span className="text-Teal">Categories</span>
         </div>
         <p className="text-sm leading-7 text-gray max-w-[700px] mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique
-          magna sit amet purus gravida quis blandit turpis cursus. Amet
-          consectetur adipiscing elit ut aliquam purus sit amet luctus.
+          for teaching web development online include comprehensive courses on
+          programming languages, frameworks, and design principles essential for
+          building robust online applications. Whether you're a beginner or an
+          experienced developer, our curated selection ensures you have access
+          to the latest tools and techniques to excel in web development.
         </p>
       </div>
       <motion.div
-      variants={container}
-      initial="hidden"
-      whileInView="visible"
-      className="grid md:grid-cols-4 sm:grid-cols-2 mt-12 gap-8">
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        className="grid md:grid-cols-4 sm:grid-cols-2 mt-12 gap-8"
+      >
         {categories.map((categorie) => {
           return <Categories key={categorie.id} {...categorie} />;
         })}

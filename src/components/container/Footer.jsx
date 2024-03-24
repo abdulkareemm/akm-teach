@@ -19,9 +19,9 @@ const Footer = () => {
         <div>
           <div className="font-bold mb-6">Get Started</div>
           <p className="text-sm leading-7 ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            incididunt ut labore et dolore magna aliqua.
+            where you can access comprehensive resources and step-by-step
+            tutorials. Begin your journey to mastering web development from the
+            comfort of your own home with our user-friendly platform
           </p>
         </div>
         <div>

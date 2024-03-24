@@ -13,10 +13,10 @@ const Teacher = () => {
             Our Platform
           </div>
           <p className="text-sm leading-7 text-gray">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Tristique magna sit amet purus gravida quis blandit turpis cursus.
-            Amet consectetur adipiscing elit ut aliquam purus sit amet luctus.
+            share your expertise in web development with eager learners
+            worldwide. Join our community of educators shaping the next
+            generation of web developers through engaging and comprehensive
+            courses
           </p>
           <button className="py-3 px-4 bg-Teal text-white rounded-lg text-sm font-bold">
             Start Teaching
@@ -31,10 +31,9 @@ const Teacher = () => {
             Our Platform
           </div>
           <p className="text-sm leading-7 text-gray">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Tristique magna sit amet purus gravida quis blandit turpis cursus.
-            Amet consectetur adipiscing elit ut aliquam purus sit amet luctus.
+            share your expertise in web development with aspiring learners
+            worldwide. Join our community of educators and empower students to
+            master the skills needed in today's digital landscape.
           </p>
           <button className="py-3 px-4 bg-Teal text-white rounded-lg text-sm font-bold">
             Get Started

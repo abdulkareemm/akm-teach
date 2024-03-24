@@ -3,7 +3,7 @@ import { useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 import {AnimatePresence,motion} from "framer-motion"
 
-const Accordion = ({ id, title }) => {
+const Accordion = ({ id, title,answer }) => {
   const [activeIndex, setActiveIndex] = useState(null);
   const handleClick = (id) => {
     setActiveIndex(activeIndex === id ? null : id);
@@ -30,10 +30,7 @@ const Accordion = ({ id, title }) => {
             className="pt-4"
           >
             <p className="text-sm leading-7 text-gray">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Tristique magna sit amet purus gravida quis blandit turpis cursus.
-              Amet consectetur adipiscing elit ut aliquam purus sit amet luctus.
+              {answer}
             </p>
           </motion.div>
         )}

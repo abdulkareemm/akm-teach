@@ -150,17 +150,25 @@ export const accordions = [
   {
     id: 1,
     title: "What is AKM-Teach?",
+    answer:
+      "AKM-Teach offers comprehensive courses in web development, providing step-by-step guidance and practical exercises for learners of all levels. With interactive modules and expert-led tutorials, mastering web development has never been more accessible.",
   },
   {
     id: 2,
     title: "What can I learn from AKM-Teach?",
+    answer:
+      "you can learn industry-standard coding languages, frameworks, and best practices. Additionally, you'll gain insights into effective instructional methods to engage students and foster their understanding of web development concepts",
   },
   {
     id: 3,
     title: "Can I teach on AKM-Teach?",
+    answer:
+      "You can teach web development online through our website, sharing your knowledge and skills with eager learners around the globe. Join our platform and inspire others on their journey to mastering web development",
   },
   {
     id: 4,
     title: "What is included in my AKM-Teach membership?",
+    answer:
+      "Your AKM-Teach membership includes access to comprehensive web development courses, interactive learning materials, and regular updates to keep you abreast of the latest industry trends. Additionally, you'll enjoy exclusive community forums and personalized support to enhance your teaching experience and help your students succeed in mastering web development skills",
   },
 ];
